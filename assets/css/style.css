@@ -204,73 +204,175 @@ footer p {
 }
 
 /*Responsive*/
-@media (max-width: 650px), only screen and (max-device-width: 667px) 
-    and (-webkit-device-pixel-ratio: 2) {
-	header, #title, nav, .main-content, .container, .focus, .contact, .portfolio, footer {
-		width: 100%;
-		float: none;
+@media screen and (max-width: 980px) {
+	.container {
+		width: 748px;
+	}
+	
+	.focus {
+		width: 400px;
+		margin-right: 70px;
+		margin-bottom: 40px;
+	}
+	
+	/*About Me*/
+	#me-pic { 
+		height: 336px;
+		width: 370px;
+		float: left;
+		margin: 0px 15px 15px 15px;
+	}
+	
+	/*Portfolio*/
+	.portfolio {
+		width: 400px;
 		text-align: center;
-		margin: 0 auto;
 	}
 
-	.focus p {
-		text-align: left;
-		padding-bottom: 15px;
-		margin: 0 15px;
+	/*Contact*/
+	.focus textarea, .focus form input {
+		width: 360px;
 	}
-
-	header {
-		height: 96px;
-		padding: 0;
-		border-bottom: solid 4px #cccccc
-	}
-
-	header li {
-		margin: 0 10px;
-	}
-
-	.focus h2 {
-		padding: 10px;
-		margin: 0px 0px 15px 0px;
-	}
-	
-	
-	/*Connect with me*/ 
-	.contact ul {
-		padding: 0;
-	}
-	
-	/*Changing contact boxes*/
-	.focus textarea, .focus form input{
-		width: 90%;
-		margin: 0;	
-	}
-
-	.focus > form  {
-		margin: -8px 0px 8px 0px;
-	}
-
-	.focus textarea {
-		margin-top: -6px;
-	}
-
 	/*Footer*/
-	.contact, footer {
-		border-top: solid 5px #4aaaa5;
-	}
-
 	/*Sticky footer. Pixles = heigh of header + footer (including borders)*/
 	.main-content {
-	min-height: calc(100vh - 150px);
-	width: 100%;
+		min-height: calc(100vh - 124px);
+		width: 100%;
 	}
 
 }
 
+@media screen and (max-width: 768px) {
+	.container {
+		width: 636px;
+	}
+	
+	.focus {
+		width: 636px;
+	}
+
+	/*Connect With Me*/
+	.contact {
+		width: 636px;
+		margin-top: 0px;
+	}
+
+	.icons {
+		text-align: center;
+	}
+
+	.icons ul {
+		padding: 0;
+	}
+
+	/*About Me*/
+	#me-pic { 
+		height: 200px;
+		width: 220px;
+		float: left;
+		margin: 0px 15px 15px 15px;
+	}
+	
+	/*Portfolio*/
+	.portfolio {
+		width: 620px;
+		text-align: left;
+	}
+
+	/*Contact*/
+	.focus textarea, .focus form input {
+		width: 600px;
+	}
+
+	/*Footer*/
+	/*Sticky footer. Pixles = heigh of header + footer (including borders)*/
+	.main-content {
+		min-height: calc(100vh - 124px);
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+
+	.container {
+		width: 100%;
+	}
+	
+	.focus {
+		clear: both;
+		width: 100%;
+		margin-top: 50px;
+	}
+
+	.focus h2 {
+		text-align: center;
+	}
+	
+	/*Header*/
+	#title {
+		width: 100%;
+		text-align: center;
+	}
+
+	nav {
+		width: 100%;
+		text-align: center;
+		background-color: #fff;
+		border-bottom: solid 3px #b6b9b5;
+	}
+
+	nav ul {
+		padding: 0px;
+		margin: 5px 0px;
+	}
+
+	/*Connect With Me*/
+	.contact {
+		width: 100%;
+		margin-top: 0px;
+	}
+
+	.icons {
+		text-align: center;
+	}
+
+	.icons ul {
+		padding: 0;
+	}
+
+	/*About Me*/
+	#me-pic { 
+		height: 200px;
+		width: 220px;
+		float: left;
+		margin: 0px 15px 15px 15px;
+	}
+	
+	/*Portfolio*/
+	.portfolio {
+		width: 100%;
+		text-align: center;
+	}
+
+	/*Contact*/
+	.focus textarea, .focus form input {
+		width: 90%;
+	}
+
+	.focus form {
+		width: 100%;
+	}
 
 
-
-
+	/*Footer*/
+	/*Sticky footer. Pixles = heigh of header + footer (including borders)*/
+	.main-content {
+		min-height: calc(100vh - 124px);
+		width: 90%;
+		margin: 0 auto;
+	}
+}
 
 
 
