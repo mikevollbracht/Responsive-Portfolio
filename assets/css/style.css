@@ -360,10 +360,10 @@ footer p {
 		width: 90%;
 	}
 
-	.focus form {
-		width: 100%;
+	.focustextarea, .focus form {
+   		margin: 0 auto;
+   		text-align: center;
 	}
-
 
 	/*Footer*/
 	/*Sticky footer. Pixles = heigh of header + footer (including borders)*/
