@@ -1,0 +1,279 @@
+/******Global******/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #777777;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+/*Header*/
+header {
+	background-color: #ffffff;
+	width: 100%;
+	border-bottom: solid 3px #cccccc;
+	height: 56px;
+}
+
+header #title {
+	float: left;
+}
+
+header h1 {
+	margin: 0;
+	padding: 10px 15px;
+	background-color: #4aaaa5;
+	color: #fff;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+header li {
+	display: inline-block;
+	margin: 5px 10px 0px 10px;
+}
+
+header nav {
+	float: right;
+}
+
+header a {
+	text-decoration: none;
+	color: #777777;
+}
+
+header .current a, header a:hover {
+	font-weight: bold;
+	color: #4aaaa5;
+}
+
+/*Main Content*/
+/*About*/
+.focus {
+	background-color: #ffffff;
+	width: 650px;
+	float: left;
+	margin-top: 25px;
+	margin-right: 40px;
+}
+
+.focus p {
+	margin: 15px;
+}
+
+.focus h2 {
+	padding-bottom: 5px;
+	margin: 15px;
+	border-bottom: solid 2px #cccccc;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+}
+
+#me-pic { 
+	height: 200px;
+	width: 220px;
+	float: left;
+	margin: 0px 15px 15px 15px;
+}
+
+/* Contact Page */
+.focus textarea, .focus form  {
+	margin: -10px 15px 0px 15px;
+
+}
+
+.focus textarea, .focus form input {
+	width: 600px;
+	font-size: 16px;
+	border: solid 1px #D3D3D3;
+}
+
+.button {
+	margin: 20px 15px;
+	padding: 10px 25px;
+	background-color: #4aaaa5;
+	border-style: none;
+	color: #fff;
+	font-size: 16px;
+}
+
+/*Portfolio*/
+.portfolio {
+	width: 620px;
+	margin: 0 auto;
+}
+
+.box {
+	height: 200px;
+	width: 260px;
+	margin: 2px 23px;
+	display: inline-block;
+	clear: both;
+}
+
+.title {
+	height: 45px;
+	width: 100%;
+	background-color: #4aaaa5;
+	position: relative;
+	bottom: 70px;
+}
+
+.title h1 {
+	padding: 10px 0px;
+	text-align: center;
+	width: 100%;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 18px;
+	color: #fff;
+	z-index: 2;
+}
+
+.port-image {
+	width: 100%;
+	height: 100%;
+}
+
+.port-image:hover {
+	opacity: .6;
+	width: 100%;
+	height: 100%;
+}
+
+/*Connect With Me*/
+.contact {
+	width: 270px;
+	background-color: #ffffff;
+	display: inline-block;
+	margin: 25px 0px;
+}
+
+.contact h3 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+	width: 80%;
+	margin: 15px auto;
+	text-align: center;
+	border-bottom: solid 2px #cccccc;
+	padding-bottom: 5px;
+}
+
+.contact img {
+	height: 60px;
+	width: 60px;
+}
+
+.contact li {
+	display: inline;
+	list-style: none;
+}
+
+.icons {
+	clear: both;
+}
+
+.contact img:hover {
+	height: 60px;
+	width: 60px;
+	opacity: .8;
+}
+/*Footer*/
+footer {
+	background-color: #666666;
+	width: 100%;
+	border-top: solid 5px #4aaaa5;
+	height: 45px;
+	margin-top: 15px;
+}
+
+footer p {
+	color: #b6b9b5;
+	text-align: center;
+	font-size: 12px;
+	margin-top: 16px;
+}
+
+/*Sticky footer. Pixles = heigh of header + footer (including borders)*/
+.main-content {
+	min-height: calc(100vh - 124px);
+	width: 100%;
+}
+
+/*Responsive*/
+@media (max-width: 650px), only screen and (max-device-width: 667px) 
+    and (-webkit-device-pixel-ratio: 2) {
+	header, #title, nav, .main-content, .container, .focus, .contact, .portfolio, footer {
+		width: 100%;
+		float: none;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.focus p {
+		text-align: left;
+		padding-bottom: 15px;
+		margin: 0 15px;
+	}
+
+	header {
+		height: 96px;
+		padding: 0;
+		border-bottom: solid 4px #cccccc
+	}
+
+	header li {
+		margin: 0 10px;
+	}
+
+	.focus h2 {
+		padding: 10px;
+		margin: 0px 0px 15px 0px;
+	}
+	
+	
+	/*Connect with me*/ 
+	.contact ul {
+		padding: 0;
+	}
+	
+	/*Changing contact boxes*/
+	.focus textarea, .focus form input{
+		width: 90%;
+		margin: 0;	
+	}
+
+	.focus > form  {
+		margin: -8px 0px 8px 0px;
+	}
+
+	.focus textarea {
+		margin-top: -6px;
+	}
+
+	/*Footer*/
+	.contact, footer {
+		border-top: solid 5px #4aaaa5;
+	}
+
+	/*Sticky footer. Pixles = heigh of header + footer (including borders)*/
+	.main-content {
+	min-height: calc(100vh - 150px);
+	width: 100%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
