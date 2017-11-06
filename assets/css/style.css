@@ -302,7 +302,7 @@ footer p {
 	.focus {
 		clear: both;
 		width: 100%;
-		margin-top: 50px;
+		margin: 25px 0px;
 	}
 
 	.focus h2 {
@@ -327,6 +327,10 @@ footer p {
 		margin: 5px 0px;
 	}
 
+	header {
+		height: 90px;
+	}
+
 	/*Connect With Me*/
 	.contact {
 		width: 100%;
@@ -342,11 +346,19 @@ footer p {
 	}
 
 	/*About Me*/
-	#me-pic { 
-		height: 200px;
-		width: 220px;
-		float: left;
-		margin: 0px 15px 15px 15px;
+
+	.about-img {
+  		width: 100%;
+  		display: inline-block;
+    	clear: both;
+	}
+	
+	img#me-pic { 
+		width: 90%;
+		height: auto;
+		margin: 0 auto;
+		display: block;
+		float: none;
 	}
 	
 	/*Portfolio*/
@@ -365,6 +377,14 @@ footer p {
    		text-align: center;
 	}
 
+	.focus p {
+		margin-bottom: 3px;
+	}
+
+	.focus textarea {
+		margin-top: 0px;
+	}
+
 	.button {
 	background-color: #4aaaa5;
 	border-style: none;
@@ -379,7 +399,7 @@ footer p {
 	/*Footer*/
 	/*Sticky footer. Pixles = heigh of header + footer (including borders)*/
 	.main-content {
-		min-height: calc(100vh - 124px);
+		min-height: calc(100vh - 155px);
 		width: 90%;
 		margin: 0 auto;
 	}
